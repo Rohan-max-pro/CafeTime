@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaina+2:wght@400..800&family=Baloo+Paaji+2:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI";
+}
+
+h1 {
+    font-family: ui-monospace;
+}
+
+h2 {
+    font-family: math;
+}
+
+p {
+    font-family: "Baloo Paaji 2";
+}
+
+h3 {
+    font-family: cursive;
+}
+
+/* HOME */
+
+#HOME {
+    background-image: url(asset/hero.png);
+    height: 100vh;
+    background-position: 35% 96%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* nav-bar */
+#nav {
+    text-transform: uppercase;
+    color: white;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1rem;
+    background: transparent;
+}
+
+#nav i {
+    font-size: 1.9rem;
+}
+
+.logo , #nav i:hover{
+    cursor: pointer;
+}
+
+.nav-items {
+    color: white;
+    width: 43%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.nav-items li:hover {
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    /* text-decoration: white underline 2px solid; */
+}
+
+/* hero */
+#hero {
+    display: flex;
+    flex-direction: column;
+    padding: 123px 0px 0px 182px;
+    gap: 13px;
+    width: 61%;
+    height: 78%;
+    color: white;
+}
+
+#hero button {
+    width: 131px;
+    height: 42px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+#hero button:hover {
+    cursor: pointer;
+    box-shadow: 0 0 17px 1px white;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    width: 50%;
+}
+
+#hero p:nth-child(3) {
+    width: 58%;
+}
+
+
+/* order  */
+
+.coffee-cup {
+    height: 111px;
+    font-size: 0.8rem;
+    background: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 102px;
+}
+
+
+
+#ORDER {
+    height: 171vh;
+}
+
+#ORDER h2 {
+    margin: 50px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-coffee {
+    padding: 3px 11px;
+    color: antiquewhite;
+    width: 97px;
+    height: 33px;
+    background-color: #30261C;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.7rem;
+}
+
+.btn-coffee:hover {
+    cursor: pointer;
+}
+
+.coffee {
+    height: 65vh;
+}
+
+
+.dessert {
+    height: 65vh;
+}
+
+.menu {
+    width: 75%;
+    height: 52vh;
+    display: flex;
+    margin: auto;
+    gap: 9px;
+}
+
+.menu-item {
+    height: 100%;
+    background: #f5eee5;
+    padding: 13px;
+    width: 30%;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu-item h3 {
+    font-size: 1.6rem;
+}
+
+.menu-item p {
+    font-size: 1rem;
+}
+
+.rate span {
+    margin-right: 64px;
+    font-weight: 700;
+}
+
+.menu-item img {
+    height: 53%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left top;
+    border: none;
+    border-radius: inherit;
+}
+
+/* RATING  */
+
+#RATING {
+    height: 117vh;
+}
+
+.banner {
+    height: 183px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+}
+
+.group {
+    margin: 25px;
+}
+
+.group button {
+    background-color: #30261C;
+    color: antiquewhite;
+    width: 178px;
+    height: 40px;
+    border: none;
+    border-radius: 25px;
+
+}
+
+.group button:hover {
+    cursor: pointer;
+}
+
+.group h3 {
+    font-size: 1.6rem;
+    width: 59%;
+    margin-bottom: 14px;
+}
+
+.group-2 {
+    align-self: center;
+    height: 63%;
+    width: 30%;
+    text-align: center;
+}
+
+.group-2 h3 {
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.group-2 p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.group-2 button {
+    background-color: #30261C;
+    color: antiquewhite;
+    width: 134px;
+    height: 33px;
+    border: none;
+    border-radius: 25px;
+}
+.group-2 button:hover {
+    cursor: pointer;
+}
+
+#email {
+    width: 232px;
+    height: 33px;
+    border: none;
+    border-radius: 54px;
+    padding: 3px 27px;
+}
+
+.reviews {
+    height: 331px;
+}
+
+.reviews h3 {
+    font-size: 1.8rem;
+    margin: 25px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.customers {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customers .review:hover {
+    width: 30%;
+    cursor: pointer;
+
+}
+
+.review {
+    width: 23%;
+}
+
+.review img {
+    width: 91%;
+}
+
+/* footer */
+
+footer {
+    height: 92px;
+    background-color: #30261C;
+}
+
+footer h4 {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: antiquewhite;
+    text-align: center;
+    padding: 32px 0px;
+}
