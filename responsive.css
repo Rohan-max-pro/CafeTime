@@ -70,9 +70,10 @@
     /* order  */
 
     #ORDER {
-        height: 604vh;
+        height: 577vh;
     }
-
+    #ORDER h2 {
+        margin: 13px 0px;}
     .coffee-cup {
         height: 71px;
         align-items: baseline;
@@ -82,11 +83,10 @@
     }
 
     .coffee {
-        height: 286vh;
+        height: 278vh;
     }
-
     .dessert {
-        height: 286vh;
+        height: 278vh;
     }
 
     
@@ -103,7 +103,7 @@
     /* review  */
 
     #RATING {
-        height: 213vh;
+        height: 197vh;
     }
 
     .banner {
@@ -153,7 +153,7 @@
     }
 
     .reviews {
-        height: 524px;
+        height: 82vh;
         padding: 19px;
     }
 
@@ -169,10 +169,6 @@
     .review {
         width: 67%;
         transition: width 0.5s ease-out 100ms;
-    }
-
-    #email:focus {
-        width: 222px;
     }
 
     .customers .review:hover {
