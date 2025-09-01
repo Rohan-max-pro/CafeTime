@@ -7,6 +7,11 @@
     font-family: "Segoe UI";
 }
 
+html {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 h1 {
     font-family: ui-monospace;
 }
@@ -23,14 +28,19 @@ h3 {
     font-family: cursive;
 }
 
+img {
+    width: 100%;
+}
+
 /* HOME */
 
 #HOME {
     background-image: url(asset/hero.png);
     height: 100vh;
-    background-position: 35% 96%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
 }
 
 /* nav-bar */
@@ -46,16 +56,25 @@ h3 {
 }
 
 #nav i {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
 }
 
-.logo , #nav i:hover{
+.logo,
+#nav i:hover {
     cursor: pointer;
+}
+
+.nav-container {
+    width: 40%;
+}
+
+.nav-container i {
+    display: none;
 }
 
 .nav-items {
     color: white;
-    width: 43%;
+    width: 99%;
     list-style: none;
     display: flex;
     align-items: center;
@@ -63,7 +82,13 @@ h3 {
 
 }
 
+.nav-items li {
+    transition: transform 0.5s;
+}
+
 .nav-items li:hover {
+    /* transition : transform 0.5s ; */
+    transform: translateY(-5px);
     cursor: pointer;
     border-bottom: 2px solid white;
     /* text-decoration: white underline 2px solid; */
@@ -73,12 +98,21 @@ h3 {
 #hero {
     display: flex;
     flex-direction: column;
-    padding: 123px 0px 0px 182px;
+    justify-content: flex-end;
+    align-items: center;
     gap: 13px;
-    width: 61%;
-    height: 78%;
+    width: 44%;
+    height: 68%;
     color: white;
 }
+
+.hero-items {
+    display: flex;
+    flex-direction: column;
+    width: 39%;
+    gap: 9px;
+}
+
 
 #hero button {
     width: 131px;
@@ -87,6 +121,7 @@ h3 {
     border-radius: 25px;
     font-weight: 900;
     font-size: 0.9rem;
+    transition: box-shadow 0.3s ease-in-out 10ms;
 }
 
 #hero button:hover {
@@ -96,13 +131,12 @@ h3 {
 
 #hero h1 {
     font-size: 2.5rem;
-    width: 50%;
+
 }
 
-#hero p:nth-child(3) {
+/* #hero p:nth-child(3) {
     width: 58%;
-}
-
+} */
 
 /* order  */
 
@@ -112,11 +146,10 @@ h3 {
     background: antiquewhite;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     gap: 102px;
+    padding: 21px;
 }
-
-
 
 #ORDER {
     height: 171vh;
@@ -137,34 +170,47 @@ h3 {
     border: none;
     border-radius: 6px;
     font-size: 0.7rem;
+    transition: box-shadow 0.3s ease-in-out 10ms;
 }
 
 .btn-coffee:hover {
     cursor: pointer;
+    box-shadow: 0px 0px 12px 5px #e14b4b;
 }
 
 .coffee {
     height: 65vh;
 }
 
-
 .dessert {
     height: 65vh;
 }
 
 .menu {
-    width: 75%;
+    width: 90%;
     height: 52vh;
     display: flex;
+    align-items: center;
     margin: auto;
     gap: 9px;
 }
 
+.menu .arr {
+    text-align: center;
+    display: inline-block;
+    width: 144px;
+    height: 59px;
+    font-size: 2.5rem;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 45px;
+}
+
 .menu-item {
-    height: 100%;
+    /* height: 100%; */
     background: #f5eee5;
-    padding: 13px;
-    width: 30%;
+    padding: 15px;
+    width: 534px;
     border: none;
     border-radius: 6px;
     display: flex;
@@ -180,13 +226,17 @@ h3 {
     font-size: 1rem;
 }
 
+.rate {
+    display: flex;
+    justify-content: space-between;
+}
+
 .rate span {
-    margin-right: 64px;
     font-weight: 700;
 }
 
 .menu-item img {
-    height: 53%;
+    height: 200px;
     width: 100%;
     object-fit: cover;
     object-position: left top;
@@ -197,7 +247,7 @@ h3 {
 /* RATING  */
 
 #RATING {
-    height: 117vh;
+    height: 123vh;
 }
 
 .banner {
@@ -205,6 +255,13 @@ h3 {
     background-color: antiquewhite;
     display: flex;
     justify-content: space-between;
+    border-radius: 18px;
+    margin: 0px 16px;
+}
+
+.banner img {
+    border-radius: inherit;
+    width: 13%;
 }
 
 .group {
@@ -256,16 +313,21 @@ h3 {
     border: none;
     border-radius: 25px;
 }
+
 .group-2 button:hover {
     cursor: pointer;
 }
 
 #email {
-    width: 232px;
+    width: 189px;
     height: 33px;
     border: none;
     border-radius: 54px;
     padding: 3px 27px;
+}
+
+#email:hover {
+    cursor: pointer;
 }
 
 .reviews {
@@ -294,6 +356,8 @@ h3 {
 
 .review {
     width: 23%;
+    transition: width 0.5s ease-out 100ms;
+
 }
 
 .review img {

@@ -1,0 +1,420 @@
+@media only screen and (max-width: 412px) {
+
+
+    #HOME {
+        background-position: 59% 2%;
+    }
+
+    /* nav-bar; */
+    #nav {
+        padding: 15px 38px;
+        position: relative;
+        justify-content: flex-end;
+        gap: 12%;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .nav-container i {
+        display: block;
+    }
+
+
+    .nav-container {
+        padding: 25px 33px;
+        position: absolute;
+        width: 34%;
+        height: 49vh;
+        top: 0;
+        left: 0;
+        text-align: center
+    }
+
+    .nav-items {
+        visibility: hidden;
+        flex-direction: column;
+        width: 73%;
+        height: 90%;
+    }
+
+    /* hero  */
+    #hero {
+        height: 78%;
+        width: 94%;
+        right: 0px;
+        gap: 4px;
+        position: absolute;
+        justify-content: flex-end;
+    }
+
+    .hero-items {
+        display: flex;
+        flex-direction: column;
+        width: 68%;
+        gap: 9px;
+    }
+
+    #hero h1 {
+        font-size: 2rem;
+        width: auto;
+    }
+
+    #hero p:nth-child(3) {
+        width: 94%;
+        font-size: min(0.7rem, 1rem);
+    }
+
+    /* order  */
+
+    #ORDER {
+        height: 604vh;
+    }
+
+    .coffee-cup {
+        height: 71px;
+        align-items: baseline;
+        line-height: 14px;
+        gap: 4%;
+        padding: 2px;
+    }
+
+    .coffee {
+        height: 286vh;
+    }
+
+    .dessert {
+        height: 286vh;
+    }
+
+    
+    .menu {
+        flex-direction: column;
+        width: 83%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .menu-item {
+        height: 351px;
+        width: 254px;
+    }
+    /* review  */
+
+    #RATING {
+        height: 213vh;
+    }
+
+    .banner {
+        flex-direction: column;
+        height: 297px;
+        overflow: hidden;
+        align-items: flex-end;
+    }
+
+    .banner img {
+        width: 46%;
+    }
+
+    .banner img:first-child {
+        align-self: flex-start;
+    }
+
+    .group {
+        margin: 0;
+        padding: 11px;
+    }
+
+    .group button {
+        width: 131px;
+        height: 33px;
+        font-size: 0.6rem;
+    }
+
+    .group h3 {
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+
+    .group-2 {
+        height: 54%;
+        width: unset;
+    }
+
+    .group-2 h3 {
+        font-size: 1rem;
+        margin: unset;
+    }
+
+    .group-2 p {
+        font-size: 0.8rem;
+        margin: unset;
+    }
+
+    .reviews {
+        height: 524px;
+        padding: 19px;
+    }
+
+    .reviews h3 {
+        font-size: 1.3rem;
+    }
+
+    .customers {
+        height: 74%;
+        flex-direction: column;
+    }
+
+    .review {
+        width: 67%;
+        transition: width 0.5s ease-out 100ms;
+    }
+
+    #email:focus {
+        width: 222px;
+    }
+
+    .customers .review:hover {
+        width: 91%;
+        cursor: pointer;
+    }
+
+    footer {
+        height: 56px;
+    }
+
+    footer h4 {
+        font-size: 0.9rem;
+        padding: 7px 0px;
+    }
+}
+
+@media only screen and (min-width : 413px) and (max-width :600px) {
+
+    /* hero & nav  */
+    .nav-container {
+        width: 60%;
+        font-size: small;
+    }
+
+    .nav-items {
+        justify-content: space-evenly;
+    }
+
+    #hero {
+        width: 79%;
+        height: 80%;
+    }
+
+    .hero-items {
+        width: 63%;
+    }
+
+    #hero p:nth-child(3) {
+        width: 88%;
+    }
+
+
+    #hero h1 {
+        font-size: 2rem;
+        width: 62%;
+    }
+
+    /* order  */
+    #ORDER {
+        height: 340vh;
+    }
+
+    .coffee {
+        height: 147vh;
+    }
+
+    .dessert {
+        height: 124vh;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        height: 130vh;
+    }
+
+    .menu-item {
+        width: 47%;
+        height: 50%;
+    }
+
+    .menu-item img {
+        height: 40%;
+    }
+
+    .coffee-cup {
+        gap: 40px;
+    }
+
+    .banner img {
+        width: 22%;
+    }
+
+    .group {
+        margin: 15px;
+        overflow: hidden;
+    }
+
+    .group h3 {
+        font-size: 1.1rem;
+        width: 90%;
+    }
+
+    /* review  */
+    #RATING {
+        height: 147vh;
+    }
+
+    .reviews {
+        height: 366px;
+    }
+
+    .customers {
+        height: 69%;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .customers .review:hover {
+        width: 50%;
+    }
+
+    .review {
+        width: 40%;
+    }
+
+    .group-2 {
+        height: 94%;
+        width: 66%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .group-2 h3 {
+        font-size: 1.2rem;
+        line-height: 26px;
+    }
+
+    .group-2 p {
+        font-size: 0.8rem;
+        line-height: 15px;
+    }
+
+    .Subscribe {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 5px;
+        justify-content: center
+    }
+}
+
+@media only screen and (min-width :601px) and (max-width :900px) {
+    #hero {
+        width: 67%;
+        height: 74%;
+    }
+
+    .nav-container {
+        width: 60%;
+    }
+
+    .hero-items {
+        width: 53%;
+    }
+
+    /* order */
+    #ORDER {
+        height: 344vh;
+    }
+
+    .coffee {
+        height: 151vh;
+    }
+    .dessert {
+        height: 151vh;
+    }
+
+    .menu {
+        width: 91%;
+        height: 122vh;
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        width: 47%;
+    }
+
+    .menu-item img {
+        height: 194px;
+    }
+
+    /* rating */
+    #RATING {
+        height: 140vh;
+    }
+
+    .group {
+        width: 60%;
+    }
+
+    .group h3 {
+        width: 89%;
+    }
+
+    .group-2 {
+        align-self: center;
+        height: 66%;
+        width: 62%;
+        text-align: center;
+    }
+
+    .review {
+        width: 27%;
+    }
+
+    .customers .review:hover {
+        width: 42%;
+    }
+}
+
+@media only screen and (min-width :901px) {
+
+    #hero {
+        width: 50%;
+        height: 68%;
+    }
+
+    .hero-items {
+        width: 61%;
+    }
+
+    .group-2 {
+        width: 62%;
+    }
+
+    #ORDER {
+        height: 210vh;
+    }
+
+    .coffee {
+        height: 85vh;
+    }
+    .dessert {
+        height: 85vh;
+    }
+
+    .menu {
+        height: 66vh;
+    }
+    #RATING {
+        height: 140vh;
+    }
+
+}

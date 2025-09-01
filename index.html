@@ -9,6 +9,7 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 
 <body>
@@ -16,22 +17,26 @@
         <section id="HOME">
             <div id="nav">
                 <div class="logo">coffea</div>
-                <ul class="nav-items">
-                    <li>HOME</li>
-                    <li>COffee</li>
-                    <li>BAKERY</li>
-                    <li>SHOP</li>
-                    <li>ABOUT</li>
-                    <li>LOGIN</li>
-                </ul>
+                <div class="nav-container">
+                    <i class="fa-solid fa-bars"></i>
+                    <ul class="nav-items">
+                        <li>HOME</li>
+                        <li>COffee</li>
+                        <li>BAKERY</li>
+                        <li>SHOP</li>
+                        <li>ABOUT</li>
+                    </ul>
+                </div>
                 <i class="fa-solid fa-magnifying-glass"></i>
 
             </div>
             <div id="hero">
-                <p>Welcome</p>
-                <h1>We serve the richest coffee in the city!</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, culpa.</p>
-                <button>Order Now</button>
+                <div class="hero-items">
+                    <p>Welcome</p>
+                    <h1>We serve the richest coffee in the city!</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat, culpa.</p>
+                    <button>Order Now</button>
+                </div>
             </div>
 
         </section>
@@ -67,12 +72,11 @@
                     <p>dessert</p>
                 </div>
             </div>
-
             <div class="coffee">
                 <h2>our special coffee</h2>
                 <div class="menu">
                     <div class="menu-item">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/023/010/450/small/the-cup-of-latte-coffee-with-heart-shaped-latte-art-and-ai-generated-free-photo.jpg"
+                        <img src="https://img.freepik.com/free-photo/cup-coffee-with-heart-drawn-foam_1286-70.jpg"
                             alt="">
                         <h3>Longo Coffee</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -111,11 +115,13 @@
                             <button class="btn-coffee">Order Now</button>
                         </div>
                     </div>
+
                 </div>
             </div>
             <div class="dessert">
                 <h2>our special dessert</h2>
                 <div class="menu">
+
                     <div class="menu-item">
                         <img src="https://static.vecteezy.com/system/resources/thumbnails/030/163/508/small_2x/the-best-coffee-shops-in-the-world-ai-generated-photo.jpg"
                             alt="">
@@ -156,6 +162,7 @@
                             <button class="btn-coffee">Order Now</button>
                         </div>
                     </div>
+
                 </div>
 
             </div>
@@ -183,8 +190,10 @@
                 <div class="group-2">
                     <h3>Join in and ger 15% off!</h3>
                     <p>Subscribe to our newsletter in get 15% off discount code.</p>
-                    <input type="email" name="email" id="email" placeholder="Email Address">
-                    <button>Subscribe</button>
+                    <div class="Subscribe">
+                        <input type="email" name="email" id="email" placeholder="Email Address">
+                        <button>Subscribe</button>
+                    </div>
                 </div>
                 <img src="asset/download 2.png" alt="">
 
